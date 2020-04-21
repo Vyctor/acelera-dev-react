@@ -33,7 +33,7 @@ Liderada por Tim Berners-Lee o o CEO Jeffrey Jaffe.
 ### W3C Validator
 É um [serviço](https://validator.w3.org/) desenvolvido pela W3C para verificar se determinada URL está seguindo seus padrões
 
-## Atomic Design 
+# Atomic Design 
 
 ### [Atomic Design by Brad Frost](https://atomicdesign.bradfrost.com/)
 > O Atomic Design é uma metodologia que nos ajuda a pensar na interface do usuário (UI) de maneira hierarquica e reforça a importancia da qualidade de petter libraries eficazes, e apresenta técnicas para otimizar o fluxo de trabalho de design e desenvolvimento em equipe. O Atomic Design também detalha o que acontece durante a criação e manutenção de sistemas de design, permitindo a implementação de UIs com mais consistência e qualidade.
@@ -55,3 +55,26 @@ Templates são responsáveis poela estrutura da página onde distribuímos os co
 
 ### Páginas 
 São instâncias espefícias dos templates e mostram como é a interface do usuário com um conteúdo representativo real.
+
+
+# CSS Modular com BEM
+
+Organizar CSS é trabalhoso e gera muitos problemas futuros de organização.
+
+BEM é a sigla de __Block Element Modifier__, que em português significa Block Elemento Modificador.
+
+## Bloco
+É o recipiente ou **contexto em que o elemento se encontra**. Imagine isso como as grandes partes estruturais do seu código.
+
+## Element 
+O element é **parte do bloco**. Bloco é tudo e elements são as partes dele. Cada element é escrito após o nome do bloco **conectado por dois trações sublinhados**.
+
+## Modifier
+Não precisar escrever novas classes em outras áreas do site se os estilos dos elementos são os mesmoos. Quando precisar modificar o estilo de um elemento específico, você pode utilizar um modificado. Adicionar um hífen duplo **--** após o elemento, ou bloco.
+
+```css
+.block--modifier {}
+.block__element--modifier {}
+.header__navigation {}
+.header__navigation--secondary {}
+```
